@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Piel</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://kit.fontawesome.com/129bb909ce.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <div id="logo">
+                <img id="logoPrincipal" src="img/logo.png">
+            </div>
+            <div id="navegacion">
+                <ul class="menuPrincipal">
+                    <li>Inicio</li>
+                    <li>Nosotros</li>
+                    <li>Productos</li>
+                    <li>Novedades</li>
+                    <li>Opiniones</li>
+                    <li>Contactos</li>
+                    <li>Reseñas</li>
+                </ul>
+            </div>
+            <div id="buscar_compras">
+                <div id="boton_buscar">
+                   <!-- <img src="img/buscar.jpg" alt="1" onclick="mostrar_buscar()">-->
+                    <i class="fas fa-search" onclick="mostrar_buscar()"></i>
+                    <div id="buscar">
+                        <input type="text">
+                    </div>
+                </div>
+                <div id="carrito_compras">
+                   <!-- <img src="img/compras.png" alt="1" onclick="mostrar_carrito()">-->
+                   <i class="fas fa-shopping-cart" onclick="mostrar_carrito()"></i>
+                </div> 
+                <div id="boton_links_navegacion" onclick="mostrar_menu_navegacion()" >
+                   <!-- <img src="" alt="1" onclick="mostrar_menu_navegacion()">  -->
+                   <!-- <i class="fas fa-bars" onclick="mostrar_menu_navegacion()"></i>-->
+                   <span id="icono_menu"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div id="carrito">
+        <div id="boton_confirmar">
+            <button>Verificar Now</button>
+        </div> 
+    </div>
+    <div id="links_boton_navegacion">
+        <ul class="menuNavegacion">
+            <li>Inicio</li>
+            <li>Nosotros</li>
+            <li>Productos</li>
+            <li>Novedades</li>
+            <li>Opiniones</li>
+            <li>Contactos</li>
+            <li>Reseñas</li>
+        </ul>
+    </div>
+    <main>
+        <div id="contenido">
+            <div id="imagen_principal">
+                <div id="contenido_imagen">
+                    <div id="titulo">
+                        <h1>EL MEJOR CUIDADO PARA TU PIEL</h1>
+                    </div>
+                    <div id="texto">
+                        <p>Tenemos una variedad de productos para el cuidado de tu piel.</p>
+                    </div>
+                    <div id="boton">
+                        <button>Compralo ahora</button>
+                    </div>
+                </div>
+            </div>
+            <div id="nosotros">
+                <div id="contenido1">
+                    <div id="titulo_contenido1">
+                        <h1>ACERCA DE NOSOTROS</h1>
+                    </div>
+                    <div id="contenido1_central">
+                        <div id="contenido1_imagen">
+                            <img src="img/nosotros-img.jpg" alt="1" id="imagen_nosotros">
+                        </div>
+                        <div id="contenido1_texto">
+                            <h1>Por qué nuestros productos son especiales?</h1>
+                            <p>En nuestra tienda, abrazamos la belleza en todas sus formas y colores. Ofrecemos una amplia gama de productos diseñados para realzar tu belleza natural y expresar tu estilo único. Desde maquillaje de alta calidad hasta cuidado de la piel y accesorios, tenemos todo lo que necesitas para resaltar tu verdadero brillo. </p>
+                            <p>Nuestro compromiso es no solo ofrecerte productos excepcionales, sino también proporcionarte la información y el asesoramiento necesarios para que puedas encontrar los productos ideales para ti. Nuestro equipo está aquí para ayudarte a elegir los productos que se ajusten a tus necesidades y estilo personal. </p>
+                            <button>Descubre más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="listProductos">
+                <div id="contenido2">
+                    <div id="titulo_contenido2">
+                        <h1>NUESTROS PRODUCTOS</h1>
+                    </div>
+                    <div id="contenido2_central">
+                        <div id="producto1" class="productosS">
+                            <div class="local_producto">
+                                <div class="imagen_producto">
+                                    <img src="img/producto-2.png" alt="1">
+                                </div>
+                                <div class="nombre_producto">
+                                    <h2>nombre</h2>
+                                </div>
+                                <div class="precio_producto">
+                                    <p>120,00 Bs.</p>
+                                </div>
+                                <div class="adicionar_carrito">
+                                    <button>Adicionar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="producto2" class="productosS">
+                            <div class="local_producto">
+                                <div class="imagen_producto">
+                                    <img src="img/producto-3.jpg" alt="1">
+                                </div>
+                                <div class="nombre_producto">
+                                    <h2>nombre</h2>
+                                </div>
+                                <div class="precio_producto">
+                                    <p>140,00 Bs.</p>
+                                </div>
+                                <div class="adicionar_carrito">
+                                    <button onclick="adicionar__al_carrito()">Adicionar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="producto3" class="productosS">
+                            <div class="local_producto">
+                                <div class="imagen_producto">
+                                    <img src="img/producto-4.jpg" alt="1">
+                                </div>
+                                <div class="nombre_producto">
+                                    <h2>nombre</h2>
+                                </div>
+                                <div class="precio_producto">
+                                    <p>50,00 Bs.</p>
+                                </div>
+                                <div class="adicionar_carrito">
+                                    <button onclick="adicionar__al_carrito()">Adicionar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="producto4" class="productosS">
+                            <div class="local_producto">
+                                <div class="imagen_producto">
+                                    <img src="img/producto-5.jpg" alt="1">
+                                </div>
+                                <div class="nombre_producto">
+                                    <h2>nombre</h2>
+                                </div>
+                                <div class="precio_producto">
+                                    <p>148,00 Bs.</p>
+                                </div>
+                                <div class="adicionar_carrito">
+                                    <button onclick="adicionar__al_carrito()">Adicionar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="producto5" class="productosS">
+                            <div class="local_producto">
+                                <div class="imagen_producto">
+                                    <img src="img/producto-6.png" alt="1">
+                                </div>
+                                <div class="nombre_producto">
+                                    <h2>nombre</h2>
+                                </div>
+                                <div class="precio_producto">
+                                    <p>100,00 Bs.</p>
+                                </div>
+                                <div class="adicionar_carrito">
+                                    <button onclick="adicionar__al_carrito()">Adicionar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="producto6" class="productosS">
+                            <div class="local_producto">
+                                <div class="imagen_producto">
+                                    <img src="img/producto-1.jpg" alt="1">
+                                </div>
+                                <div class="nombre_producto">
+                                    <h2>nombre</h2>
+                                </div>
+                                <div class="precio_producto">
+                                    <p>120,00 Bs.</p>
+                                </div>
+                                <div class="adicionar_carrito">
+                                    <button onclick="adicionar__al_carrito()">Adicionar al carrito</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="novedades">
+                <div id="contenido3">
+                    <div id="titulo_contenido3">
+                        <h1>NOVEDADES</h1>
+                    </div>
+                    <div id="contenido3_central">
+                        <div id="producto_contenido3_1" class="producto_contenido3">
+                            <div class="local_producto_contenido3">
+                                <div class="botones">
+                                    <div class="boton_carrito" onclick="adicionar__al_carrito()">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="boton_gustar">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <div class="boton_visualizar">
+                                      <i class="fas fa-eye"></i>
+                                    </div>
+                                </div>
+                                <div class="producto_contenido3_imagen">
+                                    <img src="img/productoN-3.png" alt="1">
+                                </div>
+                                <div class="producto_contenido3_nombre">
+                                    <h2>nombre</h2>
+                                </div>
+                                <div class="producto_contenido3_classificacion">
+                                    <p>3 estrellas</p>
+                                </div>
+                                <div class="producto_contenido3_precio">
+                                    <p>120,00 Bs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="producto_contenido3_2" class="producto_contenido3">
+                            <div class="local_producto_contenido3">
+                                <div class="botones">
+                                    <div class="boton_carrito" onclick="adicionar__al_carrito()">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="boton_gustar">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <div class="boton_visualizar">
+                                      <i class="fas fa-eye"></i>
+                                    </div>
+                                </div>
+                                <div class="producto_contenido3_imagen">
+                                    <img src="img/productoN-2.png" alt="1">
+                                </div>
+                                <div class="producto_contenido3_nombre">
+                                    <h2>nombre</h2>
+                                </div>
+                                <div class="producto_contenido3_classificacion">
+                                    <p>5 estrellas</p>
+                                </div>
+                                <div class="producto_contenido3_precio">
+                                    <p>70,00 Bs.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="producto_contenido3_3" class="producto_contenido3">
+                            <div class="local_producto_contenido3">
+                                <div class="botones">
+                                    <div class="boton_carrito" onclick="adicionar__al_carrito()">
+                                        <i class="fas fa-shopping-cart"></i>
+                                    </div>
+                                    <div class="boton_gustar">
+                                        <i class="fas fa-heart"></i>
+                                    </div>
+                                    <div class="boton_visualizar">
+                                      <i class="fas fa-eye"></i>
+                                    </div>
+                                </div>
+                                <div class="producto_contenido3_imagen">
+                                    <img src="img/productoN-1.png" alt="1">
+                                </div>
+                                <div class="producto_contenido3_nombre">
+                                    <h2>nombre</h2>
+                                </div>
+                                <div class="producto_contenido3_classificacion">
+                                    <p>4 estrellas</p>
+                                </div>
+                                <div class="producto_contenido3_precio">
+                                    <p>150,00 Bs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="revisar">
+                <div id="contenido4">
+                    <div id="titulo_contenido4">
+                        <h1>OPINIONES DE CLIENTES</h1>
+                    </div>
+                    <div id="contenido4_central">
+                        <div id="cliente1" class="cliente">
+                            <div class="cliente_local">
+                                <div class="contenido4_imagen">
+                                    <img src="img/quote-img.png" alt="1">
+                                </div>
+                                <div class="contenido4_texto">
+                                    <p>Aunque no suelo ser un cliente habitual en tiendas de maquillaje, me sorprendió gratamente la variedad de productos y la atención aquí. Necesitaba un regalo para mi hermana y encontré exactamente lo que buscaba.</p>
+                                </div>
+                                <div class="imagen_cliente">
+                                    <div class="local_imagen_cliente">
+                                        <img src="img/pic-3.png" alt="1">
+                                    </div>
+                                </div>
+                                <div class="nombre_cliente">
+                                    <p>Brian Barra</p>
+                                </div>
+                                <div class="evaluacion_cliente">
+                                    <p>5 estrellas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cliente2" class="cliente">
+                            <div class="cliente_local">
+                                <div class="contenido4_imagen">
+                                    <img src="img/quote-img.png" alt="1">
+                                </div>
+                                <div class="contenido4_texto">
+                                    <p>Desde que descubrí esta tienda, no puedo dejar de comprar aquí. Tienen una amplia gama de opciones para todo tipo de pieles y tonos. ¡Los productos son fantásticos y siempre me hacen sentir hermosa!</p>
+                                </div>
+                                <div class="imagen_cliente">
+                                    <div class="local_imagen_cliente">
+                                        <img src="img/pic-2.png" alt="1">
+                                    </div>
+                                </div>
+                                <div class="nombre_cliente">
+                                    <p>Ana casas</p>
+                                </div>
+                                <div class="evaluacion_cliente">
+                                    <p>4 estrellas</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cliente3" class="cliente">
+                            <div class="cliente_local">
+                                <div class="contenido4_imagen">
+                                    <img src="img/quote-img.png" alt="1">
+                                </div>
+                                <div class="contenido4_texto">
+                                    <p>Me enamoré de esta tienda desde el primer día. Los productos son de alta calidad y a precios asequibles. Además, el equipo de atención al cliente es muy servicial y siempre están dispuestos a brindar recomendaciones útiles.</p>
+                                </div>
+                                <div class="imagen_cliente">
+                                    <div class="local_imagen_cliente">
+                                        <img src="img/pic-1.png" alt="1">
+                                    </div>
+                                </div>
+                                <div class="nombre_cliente">
+                                    <p>Lucas García</p>
+                                </div>
+                                <div class="evaluacion_cliente">
+                                    <p>3 estrellas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contactanos">
+                <div id="contenido5">
+                    <div id="titulo_contenido5">
+                        <h1>CONTÁCTANOS</h1>
+                    </div>
+                    <div id="contenido5_central">
+                        <div id="mapa_localidades">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61207.50291755421!2d-68.20343353910565!3d-16.50240719310901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915f2070888d6597%3A0xff4b3324fe647d5a!2sMacrodistrito%20Centro%2C%20La%20Paz!5e0!3m2!1ses!2sbo!4v1700978366321!5m2!1ses!2sbo" frameborder="0"></iframe>
+                        </div>
+                        <div id="entrar_en_contacto">
+                            <div id="titulo_contato">
+                                <h1>Contáctanos</h1>
+                            </div>
+                            <div id="input_nombre">
+                                <img src="img/contactar_nombre.png" alt="1">
+                                <input type="text" placeholder="Nombre">
+                            </div>
+                            <div id="input_correo">
+                                <img src="img/contactar_correo.png" alt="1">
+                                <input type="text" placeholder="Correo">
+                            </div>
+                            <div id="input_numero">
+                                <img src="img/contactar_telefono.png" alt="1">
+                                <input type="text" placeholder="Número">
+                            </div>
+                            <div id="boton_contactar">
+                                <button>Contáctanos Ahora</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="resenas">
+                <div id="contenido6">
+                    <div id="titulo_contenido6">
+                        <h1>RESEÑAS</h1>
+                    </div>
+                    <div id="contenido6_central">
+                        <div id="post1" class="post">
+                            <div class="local_post">
+                                <div class="imagen_post">
+                                    <img src="img/resenia3.jpg" alt="1">
+                                </div>
+                                <div class="titulo_post">
+                                    <h1>Esmaltes</h1>
+                                </div>
+                                <div class="creador">
+                                    <p>Por el administrador / 17 Noviembre, 2023</p>
+                                </div>
+                                <div class="resumo">
+                                    <p>Esmaltes en diferentes colores. Mates, brillosos, escarchados y otros.</p>
+                                </div>
+                                <div class="ler_post">
+                                    <button>Lee más</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="post2" class="post">
+                            <div class="local_post">
+                                <div class="imagen_post">
+                                    <img src="img/resenia2.jpg" alt="1">
+                                </div>
+                                <div class="titulo_post">
+                                    <h1>Cremas humectantes</h1>
+                                </div>
+                                <div class="creador">
+                                    <p>Por el administrador / 10 Mayo, 2023</p>
+                                </div>
+                                <div class="resumo">
+                                    <p>Las cremas son realmente muy humectantes. Dejan la piel suave y fresca.</p>
+                                </div>
+                                <div class="ler_post">
+                                    <button>Lee más</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="post3" class="post">
+                            <div class="local_post">
+                                <div class="imagen_post">
+                                    <img src="img/resenia1.jpg" alt="1">
+                                </div>
+                                <div class="titulo_post">
+                                    <h1>Sombras con mucho pigmento</h1>
+                                </div>
+                                <div class="creador">
+                                    <p>Por el administrador / 13 Abril, 2023</p>
+                                </div>
+                                <div class="resumo">
+                                    <p>Las sombras que llegaron tienen mucha pigmentación, haciendo que los colores reslaten más.</p>
+                                </div>
+                                <div class="ler_post">
+                                    <button>Lee más</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="pie">
+            <div id="redes_sociales">
+                <div id="redes1">
+                    <img src="img/facebook.png" alt="1">
+                </div>
+                <div id="redes2">
+                    <img src="img/twitter.png" alt="1">
+                </div>
+                <div id="redes3">
+                    <img src="img/instagram.png" alt="1">
+                </div>
+                <div id="redes4">
+                    <img src="img/linkedin.png" alt="1">
+                </div>
+                <div id="redes5">
+                    <img src="img/pinterest.png" alt="1">
+                </div>
+            </div>
+            <div id="navegacion_pagina">
+                <ul class="menuPrincipal2">
+                    <li>Inicio</li>
+                    <li>Nosotros</li>
+                    <li>Productos</li>
+                    <li>Novedades</li>
+                    <li>Opiniones</li>
+                    <li>Contactos</li>
+                    <li>Reseñas</li>
+                </ul>
+            </div>
+            <div id="creditos">
+                <p>Realizado por Telassim Gomez | Todos los derechos reservados &#169;</p>
+            </div>
+        </div>
+    </footer>
+    <script src="index.js">
+    </script>
+</body>
+</html>
